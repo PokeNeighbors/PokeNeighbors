@@ -7,9 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
-import { MapComponent } from './map/map.component';
-import { AddressComponent } from './address/address.component';
-import { ResultComponent } from './result/result.component';
+import { MapComponent } from './home/map/map.component';
+import { AddressComponent } from './home/address/address.component';
+import { ResultComponent } from './home/result/result.component';
 
 @NgModule({
   declarations: [

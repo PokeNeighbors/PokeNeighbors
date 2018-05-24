@@ -23,69 +23,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/address/address.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/address/address.component.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/address/address.component.html":
-/*!************************************************!*\
-  !*** ./src/app/address/address.component.html ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  address works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/address/address.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/address/address.component.ts ***!
-  \**********************************************/
-/*! exports provided: AddressComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddressComponent", function() { return AddressComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AddressComponent = /** @class */ (function () {
-    function AddressComponent() {
-    }
-    AddressComponent.prototype.ngOnInit = function () {
-    };
-    AddressComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-address',
-            template: __webpack_require__(/*! ./address.component.html */ "./src/app/address/address.component.html"),
-            styles: [__webpack_require__(/*! ./address.component.css */ "./src/app/address/address.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], AddressComponent);
-    return AddressComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -207,9 +144,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
-/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./map/map.component */ "./src/app/map/map.component.ts");
-/* harmony import */ var _address_address_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./address/address.component */ "./src/app/address/address.component.ts");
-/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
+/* harmony import */ var _home_map_map_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/map/map.component */ "./src/app/home/map/map.component.ts");
+/* harmony import */ var _home_address_address_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/address/address.component */ "./src/app/home/address/address.component.ts");
+/* harmony import */ var _home_result_result_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/result/result.component */ "./src/app/home/result/result.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -237,9 +174,9 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
                 _user_user_component__WEBPACK_IMPORTED_MODULE_8__["UserComponent"],
-                _map_map_component__WEBPACK_IMPORTED_MODULE_9__["MapComponent"],
-                _address_address_component__WEBPACK_IMPORTED_MODULE_10__["AddressComponent"],
-                _result_result_component__WEBPACK_IMPORTED_MODULE_11__["ResultComponent"]
+                _home_map_map_component__WEBPACK_IMPORTED_MODULE_9__["MapComponent"],
+                _home_address_address_component__WEBPACK_IMPORTED_MODULE_10__["AddressComponent"],
+                _home_result_result_component__WEBPACK_IMPORTED_MODULE_11__["ResultComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -302,6 +239,79 @@ var GoService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/home/address/address.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/home/address/address.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div{\r\n    width: 100px;\r\n    height: 100px;\r\n    border: 2px solid black;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/home/address/address.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/home/address/address.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div (click)=\"clickery()\">Click me for address info!</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/home/address/address.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/home/address/address.component.ts ***!
+  \***************************************************/
+/*! exports provided: AddressComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddressComponent", function() { return AddressComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _go_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../go.service */ "./src/app/go.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AddressComponent = /** @class */ (function () {
+    function AddressComponent(_goService, _route, _router) {
+        this._goService = _goService;
+        this._route = _route;
+        this._router = _router;
+    }
+    AddressComponent.prototype.ngOnInit = function () {
+    };
+    AddressComponent.prototype.clickery = function () {
+        console.log("This component allows you to type in an address in order to submit it to a geolocation API!");
+    };
+    AddressComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-address',
+            template: __webpack_require__(/*! ./address.component.html */ "./src/app/home/address/address.component.html"),
+            styles: [__webpack_require__(/*! ./address.component.css */ "./src/app/home/address/address.component.css")]
+        }),
+        __metadata("design:paramtypes", [_go_service__WEBPACK_IMPORTED_MODULE_1__["GoService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], AddressComponent);
+    return AddressComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/home/home.component.css":
 /*!*****************************************!*\
   !*** ./src/app/home/home.component.css ***!
@@ -320,7 +330,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "{{test.name}} <br>\n{{test.quest}} <br>\n{{test.favoritecolor}}"
+module.exports = "<app-map></app-map> <br>\n<app-address></app-address> <br>\n<app-result></app-result> <br>\n\n<button [routerLink]=\"['/user']\">Go to the User Component!</button>"
 
 /***/ }),
 
@@ -382,32 +392,32 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/map/map.component.css":
-/*!***************************************!*\
-  !*** ./src/app/map/map.component.css ***!
-  \***************************************/
+/***/ "./src/app/home/map/map.component.css":
+/*!********************************************!*\
+  !*** ./src/app/home/map/map.component.css ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "div{\r\n    width: 100px;\r\n    height: 100px;\r\n    border: 2px solid black;\r\n}"
 
 /***/ }),
 
-/***/ "./src/app/map/map.component.html":
-/*!****************************************!*\
-  !*** ./src/app/map/map.component.html ***!
-  \****************************************/
+/***/ "./src/app/home/map/map.component.html":
+/*!*********************************************!*\
+  !*** ./src/app/home/map/map.component.html ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  map works!\n</p>\n"
+module.exports = "<div (click)=\"clickery()\">Click me for map info!</div>\n"
 
 /***/ }),
 
-/***/ "./src/app/map/map.component.ts":
-/*!**************************************!*\
-  !*** ./src/app/map/map.component.ts ***!
-  \**************************************/
+/***/ "./src/app/home/map/map.component.ts":
+/*!*******************************************!*\
+  !*** ./src/app/home/map/map.component.ts ***!
+  \*******************************************/
 /*! exports provided: MapComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -415,6 +425,8 @@ module.exports = "<p>\n  map works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapComponent", function() { return MapComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _go_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../go.service */ "./src/app/go.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -425,18 +437,26 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var MapComponent = /** @class */ (function () {
-    function MapComponent() {
+    function MapComponent(_goService, _route, _router) {
+        this._goService = _goService;
+        this._route = _route;
+        this._router = _router;
     }
     MapComponent.prototype.ngOnInit = function () {
+    };
+    MapComponent.prototype.clickery = function () {
+        console.log("This component displays the map, which is changed depending on what address is inputted from the address component!");
     };
     MapComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-map',
-            template: __webpack_require__(/*! ./map.component.html */ "./src/app/map/map.component.html"),
-            styles: [__webpack_require__(/*! ./map.component.css */ "./src/app/map/map.component.css")]
+            template: __webpack_require__(/*! ./map.component.html */ "./src/app/home/map/map.component.html"),
+            styles: [__webpack_require__(/*! ./map.component.css */ "./src/app/home/map/map.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_go_service__WEBPACK_IMPORTED_MODULE_1__["GoService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], MapComponent);
     return MapComponent;
 }());
@@ -445,32 +465,32 @@ var MapComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/result/result.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/result/result.component.css ***!
-  \*********************************************/
+/***/ "./src/app/home/result/result.component.css":
+/*!**************************************************!*\
+  !*** ./src/app/home/result/result.component.css ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "div{\r\n    width: 100px;\r\n    height: 100px;\r\n    border: 2px solid black;\r\n}"
 
 /***/ }),
 
-/***/ "./src/app/result/result.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/result/result.component.html ***!
-  \**********************************************/
+/***/ "./src/app/home/result/result.component.html":
+/*!***************************************************!*\
+  !*** ./src/app/home/result/result.component.html ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  result works!\n</p>\n"
+module.exports = "<div (click)=\"clickery()\">Click me for address info!</div>\n"
 
 /***/ }),
 
-/***/ "./src/app/result/result.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/result/result.component.ts ***!
-  \********************************************/
+/***/ "./src/app/home/result/result.component.ts":
+/*!*************************************************!*\
+  !*** ./src/app/home/result/result.component.ts ***!
+  \*************************************************/
 /*! exports provided: ResultComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -478,6 +498,8 @@ module.exports = "<p>\n  result works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResultComponent", function() { return ResultComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _go_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../go.service */ "./src/app/go.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -488,18 +510,26 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var ResultComponent = /** @class */ (function () {
-    function ResultComponent() {
+    function ResultComponent(_goService, _route, _router) {
+        this._goService = _goService;
+        this._route = _route;
+        this._router = _router;
     }
     ResultComponent.prototype.ngOnInit = function () {
+    };
+    ResultComponent.prototype.clickery = function () {
+        console.log("This component displays the map, which is changed depending on what address is inputted from the address component!");
     };
     ResultComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-result',
-            template: __webpack_require__(/*! ./result.component.html */ "./src/app/result/result.component.html"),
-            styles: [__webpack_require__(/*! ./result.component.css */ "./src/app/result/result.component.css")]
+            template: __webpack_require__(/*! ./result.component.html */ "./src/app/home/result/result.component.html"),
+            styles: [__webpack_require__(/*! ./result.component.css */ "./src/app/home/result/result.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_go_service__WEBPACK_IMPORTED_MODULE_1__["GoService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], ResultComponent);
     return ResultComponent;
 }());
@@ -515,7 +545,7 @@ var ResultComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "div{\r\n    width: 100px;\r\n    height: 100px;\r\n    border: 2px solid black;\r\n}"
 
 /***/ }),
 
@@ -526,7 +556,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  user works!\n</p>\n"
+module.exports = "<div (click)=\"clickery()\">Click me for user profile info!</div>\n"
 
 /***/ }),
 
@@ -541,6 +571,8 @@ module.exports = "<p>\n  user works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserComponent", function() { return UserComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _go_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../go.service */ "./src/app/go.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -551,10 +583,18 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var UserComponent = /** @class */ (function () {
-    function UserComponent() {
+    function UserComponent(_goService, _route, _router) {
+        this._goService = _goService;
+        this._route = _route;
+        this._router = _router;
     }
     UserComponent.prototype.ngOnInit = function () {
+    };
+    UserComponent.prototype.clickery = function () {
+        console.log("This component contains the user profile! Wheeeeee!");
     };
     UserComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -562,7 +602,7 @@ var UserComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./user.component.html */ "./src/app/user/user.component.html"),
             styles: [__webpack_require__(/*! ./user.component.css */ "./src/app/user/user.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_go_service__WEBPACK_IMPORTED_MODULE_1__["GoService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], UserComponent);
     return UserComponent;
 }());
