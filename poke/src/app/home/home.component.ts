@@ -9,12 +9,14 @@ import { ActivatedRoute, Params, Router} from '@angular/router'
 export class HomeComponent implements OnInit {
   test;
   constructor(private _goService:GoService, private _route:ActivatedRoute, private _router:Router) { 
-    this.test = "";
+    this.test = "Hi";
     
   }
 
   ngOnInit() {
+    
     this.getTestJson();
+    
   }
 
   getTestJson(){
@@ -22,6 +24,7 @@ export class HomeComponent implements OnInit {
     observable.subscribe(data => {
       console.log("Successful json return is successful");
       this.test = data;
+      console.log(this.test);
     })
   }
   // getProductsFromService(){

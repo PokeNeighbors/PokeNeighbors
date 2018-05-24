@@ -11,11 +11,13 @@ def index(request):
     return render(request,"index.html")
 
 def test(request):
+    print("Arrived at the server!")
     data = {
         'name': 'Sir Lancelot of the Round',
         'quest': 'To seek the grail',
         'favoritecolor': 'blue'
     }
+    print(data)
     return JsonResponse(data)
 
 #"date": strftime("%b %d, %Y", gmtime()),

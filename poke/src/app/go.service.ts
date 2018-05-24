@@ -10,7 +10,10 @@ export class GoService {
   }
 
   getTest(){
-    return this._http.get('/test');
+    var thing = this._http.get('/test');
+    console.log("Came back!")
+    console.log(thing)
+    return thing;
   }
   // getProducts(){
   //   return this._http.get('/products');    

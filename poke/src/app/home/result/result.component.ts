@@ -14,6 +14,6 @@ export class ResultComponent implements OnInit {
   }
 
   clickery(){
-    console.log("This component displays the map, which is changed depending on what address is inputted from the address component!")
+    console.log("This component displays the Pokemon GO score!")
   }
 }

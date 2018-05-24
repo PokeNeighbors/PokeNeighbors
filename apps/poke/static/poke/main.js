@@ -224,7 +224,10 @@ var GoService = /** @class */ (function () {
         console.log("hi service");
     }
     GoService.prototype.getTest = function () {
-        return this._http.get('/test');
+        var thing = this._http.get('/test');
+        console.log("Came back!");
+        console.log(thing);
+        return thing;
     };
     GoService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -364,7 +367,7 @@ var HomeComponent = /** @class */ (function () {
         this._goService = _goService;
         this._route = _route;
         this._router = _router;
-        this.test = "";
+        this.test = "Hi";
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.getTestJson();
@@ -375,6 +378,7 @@ var HomeComponent = /** @class */ (function () {
         observable.subscribe(function (data) {
             console.log("Successful json return is successful");
             _this.test = data;
+            console.log(_this.test);
         });
     };
     HomeComponent = __decorate([
